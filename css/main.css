@@ -327,7 +327,7 @@ Navbar
   padding: 0.15rem 1rem;
 }
 
-/* big screen */
+/* tablet screen */
 @media (min-width: 992px) {
   .nav-btn {
     display: none;
@@ -415,8 +415,7 @@ hero
   background-size: cover;
   background-repeat: no-repeat; */
 
-  background: url("/html-css-simply-recipes-main/starter/assets/main.jpeg")
-    center/cover no-repeat;
+  background: url("/assets/main.jpeg") center/cover no-repeat;
   height: 40vh;
   margin-bottom: 2rem;
   border-radius: var(--borderRadius);
@@ -440,6 +439,7 @@ hero
   text-align: center;
 }
 
+/* tablet screen */
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 4rem;
@@ -519,21 +519,44 @@ recipes
   margin-bottom: 1rem;
 }
 
+/* phone screen */
 @media (min-width: 576px) {
   .recipes-list {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-@media (min-width: 992px) {
-  .recipes-list {
-    grid-template-columns: repeat(3, 1fr);
+  .recipe-img {
+    height: 10rem;
   }
 }
 
+/* tablet screen */
+@media (min-width: 992px) {
+  .recipes-container {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .recipe p {
+    font-size: 0.85rem;
+  }
+
+  .tags-container {
+    order: 0;
+  }
+
+  .tags-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* desktop screen */
 @media (min-width: 1200px) {
   .recipes-list {
-    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .recipe h5 {
+    font-size: 1.15rem;
   }
 }
 
