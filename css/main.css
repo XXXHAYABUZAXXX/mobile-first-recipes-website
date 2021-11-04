@@ -399,6 +399,13 @@ footer
   margin-bottom: 0;
 }
 
+/* mobile screen */
+@media (max-width: 576px) {
+  .page-footer {
+    font-size: 0.85rem;
+  }
+}
+
 .footer-logo,
 .page-footer a {
   color: var(--primary-500);
@@ -517,7 +524,7 @@ recipes
   margin-bottom: 1rem;
 }
 
-/* phone screen */
+/* mobile screen */
 @media (min-width: 576px) {
   .recipes-list {
     grid-template-columns: repeat(2, 1fr);
@@ -580,7 +587,7 @@ about
   padding-bottom: 3rem;
 }
 
-/* tablet */
+/* tablet screen */
 @media (min-width: 992px) {
   .about-page {
     grid-template-columns: repeat(2, 1fr);
@@ -614,6 +621,7 @@ contact page
   padding-bottom: 2rem;
 }
 
+/* tablet screen */
 @media (min-width: 992px) {
   .contact-container {
     grid-template-columns: 1fr 450px;
@@ -656,14 +664,14 @@ tags
   font-weight: 600;
 }
 
-/* mobile */
+/* mobile screen */
 @media (min-width: 576px) {
   .tags-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* tablet */
+/* tablet screen */
 @media (min-width: 992px) {
   .tags-wrapper {
     grid-template-columns: repeat(3, 1fr);
@@ -726,7 +734,7 @@ single recipe page
   text-transform: capitalize;
 }
 
-/* tablet */
+/* tablet screen */
 @media (min-width: 992px) {
   .recipe-hero {
     grid-template-columns: 4fr 5fr;
@@ -740,7 +748,7 @@ single recipe page
   padding: 3rem 0;
 }
 
-/* tablet */
+/* tablet screen */
 @media (min-width: 992px) {
   .recipe-content {
     grid-template-columns: 2fr 1fr;
